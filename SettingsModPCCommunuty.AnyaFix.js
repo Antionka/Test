@@ -1,4 +1,4 @@
-var faker = require('faker');
+const faker = require('faker');
 const clickDropDown = (title) => {
     cy.get('input[name="moderationMode"]').next().click()
     cy.get(`span[title="${title}"]`).trigger('mouseover').click({ force: true })
